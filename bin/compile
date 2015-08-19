@@ -25,4 +25,4 @@ if [ -z "$DEPLOY_TASKS" ]; then
 fi
 
 echo "Running Rake: $DEPLOY_TASKS"
-cd $build_dir && bundle exec rake $DEPLOY_TASKS
+cd $build_dir && bundle exec rake $(echo $DEPLOY_TASKS)
